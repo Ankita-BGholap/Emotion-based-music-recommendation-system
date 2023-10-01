@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MoodTune</title>
+		
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+		<!-- Animate CSS -->
+		<link href="{{url_for('static',filename='css/animate.min.css')}}" rel="stylesheet">
+		<!-- Basic stylesheet -->
+		<link rel="stylesheet" href= "{{url_for('static', filename='css/owl.carousel.css')}}">
+		<!-- Font awesome CSS -->
+		<link href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+		<!-- Custom CSS -->
+		<link href="{{url_for('static', filename='css/owl.carousel.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/style-color.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='css/styleplayer.css')}}" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/logo/favicon.ico">
+	</head>
+	
+	<body>
+
+		<!-- wrapper -->
+
+		<header class="pk">
+		<div class="wrapper" id="home">
+				<nav class="navbar navbar-fixed-top navbar-default">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- logo area -->
+							<a class="navbar-brand" href="#home">
+								<!-- logo image -->
+								<img class="img-responsive" src="{{url_for('static', filename='img/logo/logo1.png')}}"alt="" />
+							</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Home</a></li>
+								<li><a href="#latestalbum">About</a></li>
+								<li><a href="#team">Team</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+		</div>
+			</header><!--/ header end -->
+			
+			<!-- banner area -->
+			<div class="banner">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="{{url_for('static', filename='img/banner/b1.jpg')}}" alt="...">
+							<div class="container">
+								<!-- banner caption -->
+								<div class="carousel-caption slide-one">
+									<!-- heading -->
+									<h2 class="animated fadeInLeftBig"><i class="fa fa-music"></i> Change Mood In Minute !</h2>
+									<!-- paragraph -->
+									<h3 class="animated fadeInRightBig">Find More Innovative &amp; Creative Music Albums.</h3>
+									<!-- button -->
+									<a href="http://localhost:5000/camera" class="animated fadeIn btn btn-theme">Detect Emotion</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<img src="{{url_for('static', filename='img/banner/b2.jpg')}}" alt="...">
+							<div class="container">
+								<!-- banner caption -->
+								<div class="carousel-caption slide-two">
+									<!-- heading -->
+									<h2 class="animated fadeInLeftBig"><i class="fa fa-headphones"></i> Listen It...</h2>
+									<!-- paragraph -->
+									<h3 class="animated fadeInRightBig">Without Music, Life Would Be a Incomplete</h3>
+									<!-- button -->
+									<a href="#" class="animated fadeIn btn btn-theme">Listen Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="fa fa-arrow-left" aria-hidden="true"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="fa fa-arrow-right" aria-hidden="true"></span>
+					</a>
+				</div>
+			</div>
+			<!--/ banner end -->
+			
+			<!-- block for animate navigation menu -->
+			<div class="nav-animate"></div>
+			
+			<!-- Hero block area -->
+			<div id="latestalbum" class="hero pad">
+				<div class="container">
+					<!-- hero content -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>About</h2>
+					</div>
+							<!-- hero play list -->
+							<div class="hero-playlist">
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<!-- music album image -->
+										<div class="figure">
+											<!-- image -->
+											<img class="img-responsive" src="{{url_for('static', filename='img/logo/music-beat.gif')}}" alt="" />
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-10">
+										<!-- play list -->
+										<div class="playlist-content">
+											<ul class="list-unstyled">
+												<li class="playlist-number">
+													<!-- song information -->
+												
+														<!-- song title -->
+														<p class="teja"> &nbsp; Listening to music can lower your blood pressure and your heart rate (both spike when you're stressed), and even lower stress hormones in your body.</p><br><p class="teja"> &nbsp;  Human expressions play an important role in the extraction of an individual's emotional state.
+															It helps in determining the current state and mood of an individual, extracting and understanding the emotion of user.</p><br><p class="teja"> &nbsp;We are trying to change the mood based on his/her emotion .
+															This web application recommmend the music based on the emotion captured in camera and automatically provide the playlist of songs which include happy,sad,neutral,surprise emotions.
+														</p>
+													
+													</li>			
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/ hero end -->
+			
+		
+			
+			
+			
+			
+			<!-- about -->
+			<div class="about" id="team">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Who We Are?</h2>
+					</div>
+					<!-- about what we are like content -->
+					<div class="about-what-we">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<div class="what-we-item ">
+									<!-- heading with icon -->
+									<h3><i class="fa fa-heartbeat"></i> What we do?</h3>
+									<!-- paragraph -->
+									<p>We implement and solve one of the most important problems that no one around notice, music is taking a very huge part of our everyday routine and we choose what to listen to base on many things one of them is Emotions.</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="what-we-item ">
+									<!-- heading with icon -->
+									<h3><i class="fa fa-hand-o-up"></i> Why choose us?</h3>
+									<!-- paragraph -->
+									<p>Our system helps to reduce the efforts of users in creating and managing playlist. We develop a system that presents a cross platform music player, which recommends music based on the real-time mood of the user through a web camera.</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div class="what-we-item ">
+									<!-- heading with icon -->
+									<h3><i class="fa fa-map-marker"></i> Where we are?</h3>
+
+									<!-- paragraph -->
+									<p>The emotions that the system can detect were happy, sad, angry, neutral, or surprised.The music are one that has the power to heal any stress or any kind of emotions. Thus the proposed system presents Face based emotion recognition system to detect the emotions and play music from the emotion detected.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- our team -->
+				<div class="team">
+					<div class="container">	
+						<!-- Team Member's Details -->
+						<div class="team-content">
+							<div class="row">
+								<div class="col-md-3 col-sm-6">
+									<!-- Team Member -->
+									<div class="team-member  delay-one">
+										<!-- Image Hover Block -->
+										<div class="member-img">
+											<!-- Image  -->
+											<img class="img-responsive" src="{{url_for('static', filename='img/user/1.jpg')}}" alt="" />
+											<!-- Hover block -->
+											<div class="social text-center">
+												<a href="#"><i class="fa fa-facebook"></i></a>
+												<a href="#"><i class="fa fa-google-plus"></i></a>
+												<a href="#"><i class="fa fa-linkedin"></i></a>
+												<a href="#"><i class="fa fa-twitter"></i></a>
+											</div>
+										</div>
+										<!-- Member Details -->
+										<h3>Shubham Patil</h3>
+										<span class="designation">shubhampatil@gmail.com</span>
+										<span class="designation">9112657358</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Team Member -->
+									<div class="team-member  delay-two">
+										<!-- Image Hover Block -->
+										<div class="member-img">
+											<!-- Image  -->
+											<img class="img-responsive" src="{{url_for('static', filename='img/user/pic.jpg')}}" alt="" />
+											<!-- Hover block -->
+											<div class="social text-center">
+												<a href="#"><i class="fa fa-facebook"></i></a>
+												<a href="#"><i class="fa fa-google-plus"></i></a>
+												<a href="#"><i class="fa fa-linkedin"></i></a>
+												<a href="#"><i class="fa fa-twitter"></i></a>
+											</div>
+										</div>
+										<!-- Member Details -->
+										<h3>Ankita Gholap</h3>
+										<span class="designation">ankitagholap7888@gmail.com</span>
+										<span class="designation">7888208468</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Team Member -->
+									<div class="team-member  delay-three">
+										<!-- Image Hover Block -->
+										<div class="member-img">
+											<!-- Image  -->
+											<img class="img-responsive" src="{{url_for('static', filename='img/user/3.jpg')}}" alt="" />
+											<!-- Hover block -->
+											<div class="social text-center">
+												<a href="#"><i class="fa fa-facebook"></i></a>
+												<a href="#"><i class="fa fa-google-plus"></i></a>
+												<a href="#"><i class="fa fa-linkedin"></i></a>
+												<a href="#"><i class="fa fa-twitter"></i></a>
+											</div>
+										</div>
+										<!-- Member Details -->
+										<h3>Tejashri bachkar</h3>
+										<span class="designation">tejashribachkar@gmail.com</span>
+										<span class="designation">7264041065</span>
+									</div>
+								</div>
+							</div>	
+					</div>
+				</div>
+			</div>
+			<!-- about end -->
+			
+			
+			<!-- contact -->
+			<div class="contact pad" id="contact">
+				<div class="container">
+					<!-- default heading -->
+					<div class="default-heading">
+						<!-- heading -->
+						<h2>Contact Us</h2>
+					</div>
+					<div class="row">	
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-street-view"></i>
+								<!-- contact details  -->
+								<span class="contact-details">GCOEARA Awasari,Pune</span>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-wifi"></i>
+								<!-- contact details  -->
+								<span class="contact-details">admin@gmil.com</span>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- contact item -->
+							<div class="contact-item ">
+								<!-- big icon -->
+								<i class="fa fa-phone"></i>
+								<!-- contact details  -->
+								<span class="contact-details">+91 9234567896</span>
+							</div>
+						</div>
+					</div>
+					<!-- form content -->
+					<div class="form-content ">
+						<!-- paragraph -->
+						<p>Do you have any idea in your mind? Drop us a line.</p>
+						<form role="form" id="contactForm" method="post">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label for="name">Name</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+									</div>
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="phone">Phone</label>
+										<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone">
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+										<label for="message">Message</label>
+										<textarea class="form-control" id="message" name="message" rows="9" placeholder="Enter message"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-lg btn-theme">Send Message</button>
+							</div>
+						</form>
+												
+					</div>
+
+				</div>
+			</div>
+			<!-- contact end -->
+			
+			<!-- footer -->
+			<footer>
+				<div class="container">
+					<!-- social media links -->
+					<div class="social">
+						<a class="h-facebook" href="#"><i class="fa fa-facebook"></i></a>
+						<a class="h-google" href="#"><i class="fa fa-google-plus"></i></a>
+						<a class="h-linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+						<a class="h-twitter" href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				
+				</div>
+			</footer>
+			<!-- footer end -->
+			
+			<!-- Scroll to top -->
+			<span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span> 
+			
+		</div>
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="{{url_for('static', filename='js/jquery.js')}}"></script>
+		<!-- Bootstrap JS -->
+		<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+		<!-- WayPoints JS -->
+		<script src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
+		<!-- Include js plugin -->
+		<script src="{{url_for('static', filename='ijs/owl.carousel.min.js')}}"></script>
+		<!-- One Page Nav -->
+		<script src="{{url_for('static', filename='js/jquery.nav.js')}}"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="{{url_for('static', filename='js/respond.min.js')}}"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="{{url_for('static', filename='js/html5shiv.js')}}"></script>
+		<!-- Custom JS -->
+		<script src="{{url_for('static', filename='js/custom.js')}}"></script>
+	</body>	
+</html>
